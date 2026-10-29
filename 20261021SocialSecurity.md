@@ -8,6 +8,7 @@ October 21, 2026
 
 
 <br>
+
 ## Introduction
 
 Social Security monthly benefits can start when eligible participants reach age 62, however the monthly benefit increases by delaying the start of payments as late as age 70.
