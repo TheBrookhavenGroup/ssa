@@ -8,7 +8,7 @@ Compare the future value of investing monthly Social Security benefits starting
 at age 67 versus age 70, with an optional after-tax comparison.
 
 - **[Read the report](20261021SocialSecurity.md)** — equations, assumptions, results, and charts.
-- **[Open the interactive calculator](https://schwarzschild.github.io/social-security-investment/web/index.html)** — enter your own PIA, start and end ages, annual return, and tax assumptions.
+- **[Open the interactive calculator](https://thebrookhavengroup.github.io/ssa/web/index.html)** — enter your own PIA, start and end ages, annual return, and tax assumptions.
 
 ## Use the calculator
 
