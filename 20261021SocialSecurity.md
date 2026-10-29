@@ -339,3 +339,5 @@ Under this model’s assumptions, if you do not need the Social Security payment
 | $G$ | Accumulated investment growth, excluding contributions. |
 | $T$ | One-time capital gains tax paid at age 90. |
 | $\mathrm{FV}_{\text{net-tax}}$ | After tax future value. |
+
+Copyright © 2026 The Brookhaven Group, LLC.

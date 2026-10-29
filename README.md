@@ -83,3 +83,9 @@ Inputs are illustrative and assumptions may not apply to an individual. The
 author is not a professional investment advisor and accepts no responsibility
 for decisions based on this project. Assess accuracy and applicability for your
 own circumstances.
+
+## License
+
+Licensed under the [MIT License](LICENSE).
+
+Copyright © 2026 The Brookhaven Group, LLC.

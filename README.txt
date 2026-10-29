@@ -157,3 +157,9 @@ Crossings are searched within those bounds only; no crossing in that interval
 does not establish that no solution exists elsewhere. All charts use dollar
 values on a linear scale. If both starts are 70, the streams are identical.
 The existing Python CLI, configuration, reports, and PDF are independent.
+
+LICENSE
+
+Licensed under the MIT License. See LICENSE for the full terms.
+
+Copyright © 2026 The Brookhaven Group, LLC.
