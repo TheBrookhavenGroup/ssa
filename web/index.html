@@ -20,21 +20,21 @@
 <label>Comparison start age<input value="70" disabled></label>
 <label>End age (birthday)<input name="end" type="number" value="90" min="71" max="150" step="1" required></label>
 <label>Effective annual return (%)<input name="annual" type="number" value="10" min="-99.99" step="any" required></label>
-</div><p class="hint">Full retirement age is 67. Benefits are PIA × [1 + 8% × (start age − 67)]. Whole-year start ages 67–70 only; benefits remain constant. For ages 68–69, this simplifies the actual timing of delayed-credit adjustments.</p></fieldset>
+</div></fieldset>
 <fieldset><legend>Income taxes on each benefit</legend><div class="fields">
 <label>Federal taxable share (%)<input name="fedShare" type="number" value="85" min="0" max="100" step="any" required></label>
 <label>Federal income tax (%)<input name="fedIncome" type="number" value="37" min="0" max="100" step="any" required></label>
 <label>State/local taxable share (%)<input name="stateShare" type="number" value="0" min="0" max="100" step="any" required></label>
 <label>State income tax (%)<input name="stateIncome" type="number" value="6.5" min="0" max="100" step="any" required></label>
 <label>Local income tax (%)<input name="localIncome" type="number" value="3.3" min="0" max="100" step="any" required></label>
-</div><p class="hint">Maryland defaults exempt Social Security from state and local taxes. Taxable shares and rates are fixed assumptions; tax brackets and income thresholds are not calculated.</p></fieldset>
+</div></fieldset>
 <fieldset><legend>Taxes on investment gains at the end age</legend><div class="fields">
 <label>Federal capital gains (%)<input name="fedGains" type="number" value="20" min="0" max="100" step="any" required></label>
 <label>Net investment income tax (%)<input name="niit" type="number" value="3.8" min="0" max="100" step="any" required></label>
 <label>State capital gains (%)<input name="stateGains" type="number" value="6.5" min="0" max="100" step="any" required></label>
 <label>Local capital gains (%)<input name="localGains" type="number" value="3.3" min="0" max="100" step="any" required></label>
 <label>Maryland capital gains surtax (%)<input name="surtax" type="number" value="2" min="0" max="100" step="any" required></label>
-</div><p class="hint">Defaults match the report's highest-rate Maryland scenario. All growth is treated as long-term and realized once at the end; the surtax and NIIT apply here at their entered rates without threshold checks. Set inapplicable rates to zero.</p></fieldset>
+</div></fieldset>
 <div class="actions"><button type="submit">Calculate comparison</button><button type="reset" class="secondary">Reset defaults</button></div>
 </form>
 <p id="error" role="alert" hidden></p>
