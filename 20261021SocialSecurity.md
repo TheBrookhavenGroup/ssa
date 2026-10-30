@@ -251,6 +251,7 @@ $$
 Here $V$ is the balance before capital-gains tax at age 90, $G$ is accumulated investment growth, $T$ is the one-time capital-gains tax, and $\mathrm{FV}_{\text{net-tax}}$ is the after tax future value.
 
 <br>
+
 ### After tax results
 
 
