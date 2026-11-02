@@ -29,8 +29,8 @@
 <h2>Introduction</h2>
 <p>Social Security monthly benefits can start when eligible participants reach age 62, however the monthly benefit increases by delaying the start of payments as late as age 70.</p>
 <p>I have two questions: 1. Is it better to start taking Social Secutity payments at age 67 or age 70?; and 2. What investment interest rate makes it beneficial to start payments early?</p>
-<p>To answer these questions I simulated investing all monthly Social Security payments until age 90. The future value was calculated with payments started at age 67 compared to waiting until age 70. The analysis derives both monthly payments from an illustrative <strong>primary insurance amount (PIA)</strong> of <img src="output/report_math/equation-001.svg" alt="\$4,152">, then tabulates both strategies at a 10.00% annual investment return. Charts illustrate future values over a range of annual returns from 3.50% to 20.00%, and identifies the break-even return at which their final balances are equal. The analysis is repeated using federal and Maryland tax assumptions for net tax results.</p>
-<p>One does not have to retire in order to claim benefits.  Monthly payments made before age 67, for particpants born in 1960 or later, are reduced based on earned income.  For a PIA of <img src="output/report_math/equation-002.svg" alt="\$4,152"> at age 67 an income of <img src="output/report_math/equation-003.svg" alt="\$117,485"> would result in zero benefit in years earlier than age 67.  After age 67 the full benefit is paid regardless of employment status.  </p>
+<p>To answer these questions I simulated investing all monthly Social Security payments until age 90. The future value was calculated with payments started at age 67 compared to waiting until age 70. The analysis derives both monthly payments from an illustrative <strong>primary insurance amount (PIA)</strong> of <img src="output/report_math/equation-001.svg?v=b44a2a409673" alt="\$4,152">, then tabulates both strategies at a 10.00% annual investment return. Charts illustrate future values over a range of annual returns from 3.50% to 20.00%, and identifies the break-even return at which their final balances are equal. The analysis is repeated using federal and Maryland tax assumptions for net tax results.</p>
+<p>One does not have to retire in order to claim benefits.  Monthly payments made before age 67, for particpants born in 1960 or later, are reduced based on earned income.  For a PIA of <img src="output/report_math/equation-002.svg?v=b44a2a409673" alt="\$4,152"> at age 67 an income of <img src="output/report_math/equation-003.svg?v=60ed1a27e1fa" alt="\$117,485"> would result in zero benefit in years earlier than age 67.  After age 67 the full benefit is paid regardless of employment status.  </p>
 <p>Symbols used in formulas are defined throughout this document and summarized in the appendix.</p>
 <hr>
 <p><strong>Disclaimer:</strong> All inputs in this report are used for illustration purposes only. The assumptions made may not apply to any particular individual. The author is not a professional investment advisor and accepts no responsibility for decisions made based on this report. The accuracy of the report and the applicability of its conclusions must be independently assessed in light of each individual’s circumstances.</p>
@@ -144,22 +144,22 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>PIA input (<img src="output/report_math/equation-004.svg" alt="P_{\mathrm{PIA}}">)</td>
+<td>PIA input (<img src="output/report_math/equation-004.svg?v=5153f935c67d" alt="P_{\mathrm{PIA}}">)</td>
 <td align="right">$4,152.00</td>
 <td align="right">$4,152.00</td>
 </tr>
 <tr>
-<td>Derived monthly payment (<img src="output/report_math/equation-005.svg" alt="P_{67}">, <img src="output/report_math/equation-006.svg" alt="P_{70}">)</td>
+<td>Derived monthly payment (<img src="output/report_math/equation-005.svg?v=d4923d0ed679" alt="P_{67}">, <img src="output/report_math/equation-006.svg?v=a5bcfad609d7" alt="P_{70}">)</td>
 <td align="right">$4,152.00</td>
 <td align="right">$5,148.48</td>
 </tr>
 <tr>
-<td>Number of monthly payments (<img src="output/report_math/equation-007.svg" alt="n_{67}">, <img src="output/report_math/equation-008.svg" alt="n_{70}">)</td>
+<td>Number of monthly payments (<img src="output/report_math/equation-007.svg?v=5f07d434db6e" alt="n_{67}">, <img src="output/report_math/equation-008.svg?v=5ec677e2bf3e" alt="n_{70}">)</td>
 <td align="right">276</td>
 <td align="right">240</td>
 </tr>
 <tr>
-<td>Annual investment return (<img src="output/report_math/equation-009.svg" alt="r_a">)</td>
+<td>Annual investment return (<img src="output/report_math/equation-009.svg?v=334309037ff8" alt="r_a">)</td>
 <td align="right">10.00%</td>
 <td align="right">10.00%</td>
 </tr>
@@ -170,20 +170,20 @@
 </tr>
 </tbody></table></div>
 <p>Payments are invested at the <strong>beginning of each month</strong>, and future values are measured at the <strong>end of the final month</strong>. The first payment earns interest for the full investment period; the last earns one month of interest.</p>
-<p>The example uses <img src="output/report_math/equation-010.svg" alt="P_{\mathrm{PIA}}=4{,}152"> dollars per month. SSA publishes <strong>$4,152</strong> as the maximum monthly benefit for a worker retiring at full retirement age in <strong>2026</strong>. Here it is used as an illustrative PIA.  The PIA depends on historical earnings.</p>
+<p>The example uses <img src="output/report_math/equation-010.svg?v=1cf191e16ad5" alt="P_{\mathrm{PIA}}=4{,}152"> dollars per month. SSA publishes <strong>$4,152</strong> as the maximum monthly benefit for a worker retiring at full retirement age in <strong>2026</strong>. Here it is used as an illustrative PIA.  The PIA depends on historical earnings.</p>
 <p>The monthly benefit starting at ages 67 and 70 respectively are:</p>
-<p><img src="output/report_math/equation-011.svg" alt="P_{67}=P_{\mathrm{PIA}}=4{,}152.00"></p>
-<p><img src="output/report_math/equation-012.svg" alt="P_{70}=1.24P_{\mathrm{PIA}}=5{,}148.48."></p>
-<p>Let <img src="output/report_math/equation-013.svg" alt="r_a"> denote the annual investment return and <img src="output/report_math/equation-014.svg" alt="r_m"> the equivalent monthly return. For a <img src="output/report_math/equation-015.svg" alt="10\%"> annual return <img src="output/report_math/equation-016.svg" alt="r_a=0.10">. The monthly rate, in decimal form, used for compounding is:</p>
-<p><img src="output/report_math/equation-017.svg" alt="r_m=(1+0.10)^{1/12}-1\approx0.007974140429."></p>
+<p><img src="output/report_math/equation-011.svg?v=704d455bb36c" alt="P_{67}=P_{\mathrm{PIA}}=4{,}152.00"></p>
+<p><img src="output/report_math/equation-012.svg?v=51ac18d65c45" alt="P_{70}=1.24P_{\mathrm{PIA}}=5{,}148.48."></p>
+<p>Let <img src="output/report_math/equation-013.svg?v=334309037ff8" alt="r_a"> denote the annual investment return and <img src="output/report_math/equation-014.svg?v=1beace65dbbe" alt="r_m"> the equivalent monthly return. For a <img src="output/report_math/equation-015.svg?v=d5535508170d" alt="10\%"> annual return <img src="output/report_math/equation-016.svg?v=88f05aa007f5" alt="r_a=0.10">. The monthly rate, in decimal form, used for compounding is:</p>
+<p><img src="output/report_math/equation-017.svg?v=adb8e4be9d57" alt="r_m=(1+0.10)^{1/12}-1\approx0.007974140429."></p>
 <h3>Finding delta</h3>
 <p>Delta is the difference between the future values starting benefits at age 67 and age 70.</p>
-<p>Let <img src="output/report_math/equation-018.svg" alt="P_{67}"> and <img src="output/report_math/equation-019.svg" alt="P_{70}"> be the gross monthly payments starting at ages 67 and 70 respectively. Let <img src="output/report_math/equation-020.svg" alt="n_{67}"> and <img src="output/report_math/equation-021.svg" alt="n_{70}"> be the respective payment counts. The corresponding before-tax future values at age 90 are <img src="output/report_math/equation-022.svg" alt="\mathrm{FV}_{67}"> and <img src="output/report_math/equation-023.svg" alt="\mathrm{FV}_{70}">.</p>
-<p><img src="output/report_math/equation-024.svg" alt="\mathrm{FV}{67} = P{67}(1+r_m)\frac{(1+r_m)^{n_{67}}-1}{r_m} \tag{1}"></p>
-<p><img src="output/report_math/equation-025.svg" alt="\mathrm{FV}{70} = P{70}(1+r_m)\frac{(1+r_m)^{n_{70}}-1}{r_m} \tag{2}"></p>
-<p>The difference <img src="output/report_math/equation-026.svg" alt="\Delta"> is the age-67 future value minus the age-70 future value:</p>
-<p><img src="output/report_math/equation-027.svg" alt="\Delta = \mathrm{FV}{67} - \\mathrm{FV}{70} \tag{3}"></p>
-<p>Therefore, <img src="output/report_math/equation-028.svg" alt="\Delta"> is how much more value is gained by starting payments early.</p>
+<p>Let <img src="output/report_math/equation-018.svg?v=d4923d0ed679" alt="P_{67}"> and <img src="output/report_math/equation-019.svg?v=a5bcfad609d7" alt="P_{70}"> be the gross monthly payments starting at ages 67 and 70 respectively. Let <img src="output/report_math/equation-020.svg?v=5f07d434db6e" alt="n_{67}"> and <img src="output/report_math/equation-021.svg?v=5ec677e2bf3e" alt="n_{70}"> be the respective payment counts. The corresponding before-tax future values at age 90 are <img src="output/report_math/equation-022.svg?v=2c9ac6e09657" alt="\mathrm{FV}_{67}"> and <img src="output/report_math/equation-023.svg?v=1d8d86f05573" alt="\mathrm{FV}_{70}">.</p>
+<p><img src="output/report_math/equation-024.svg?v=24e7fc05f372" alt="\mathrm{FV}{67} = P{67}(1+r_m)\frac{(1+r_m)^{n_{67}}-1}{r_m} \tag{1}"></p>
+<p><img src="output/report_math/equation-025.svg?v=908c5aa2e84f" alt="\mathrm{FV}{70} = P{70}(1+r_m)\frac{(1+r_m)^{n_{70}}-1}{r_m} \tag{2}"></p>
+<p>The difference <img src="output/report_math/equation-026.svg?v=8a5f934da889" alt="\Delta"> is the age-67 future value minus the age-70 future value:</p>
+<p><img src="output/report_math/equation-027.svg?v=7e2c89cefab9" alt="\Delta = \mathrm{FV}{67} - \\mathrm{FV}{70} \tag{3}"></p>
+<p>Therefore, <img src="output/report_math/equation-028.svg?v=8a5f934da889" alt="\Delta"> is how much more value is gained by starting payments early.</p>
 <h4>Results at 10.00% effective annual return</h4>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Report table"><table>
 <thead>
@@ -193,37 +193,37 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>Annual investment return (<img src="output/report_math/equation-029.svg" alt="r_a">)</td>
+<td>Annual investment return (<img src="output/report_math/equation-029.svg?v=334309037ff8" alt="r_a">)</td>
 <td align="right">10%</td>
 </tr>
 <tr>
-<td>Payments starting at 67 (<img src="output/report_math/equation-030.svg" alt="FV_{67}">)</td>
+<td>Payments starting at 67 (<img src="output/report_math/equation-030.svg?v=7eaa8db1a938" alt="FV_{67}">)</td>
 <td align="right">$4,174,697</td>
 </tr>
 <tr>
-<td>Payments starting at 70 <img src="output/report_math/equation-031.svg" alt="FV_{70}">)</td>
+<td>Payments starting at 70 <img src="output/report_math/equation-031.svg?v=7e39f4225e67" alt="FV_{70}">)</td>
 <td align="right">$3,727,431</td>
 </tr>
 <tr>
-<td>FV67 - FV70 (<img src="output/report_math/equation-032.svg" alt="\Delta">)</td>
+<td>FV67 - FV70 (<img src="output/report_math/equation-032.svg?v=8a5f934da889" alt="\Delta">)</td>
 <td align="right">$447,266</td>
 </tr>
 </tbody></table></div>
 <p>The positive delta means that starting at age 67 yields a larger final investment balance under these inputs. The earlier payments have more time to compound.</p>
 <h3>Finding the nonzero break-even return</h3>
-<p>Find the break-even monthly return <img src="output/report_math/equation-033.svg" alt="r_{mb}\ne0"> at which the two future values are equal:</p>
-<p><img src="output/report_math/equation-034.svg" alt="\mathrm{FV}{67} = \\mathrm{FV}{70} \tag{4}"></p>
-<p><img src="output/report_math/equation-035.svg" alt="P_{67}(1+r_{mb})\frac{(1+r_{mb})^{n_{67}}-1}{r_{mb}} = P_{70}(1+r_{mb})\frac{(1+r_{mb})^{n_{70}}-1}{r_{mb}} \tag{5}"></p>
-<p>Solve Equation 5 numerically for a nonzero <img src="output/report_math/equation-036.svg" alt="r_{mb}">.</p>
-<p>Let <img src="output/report_math/equation-037.svg" alt="r_{ab}"> denote the effective annual break-even return corresponding to the monthly solution <img src="output/report_math/equation-038.svg" alt="r_{mb}">:</p>
-<p><img src="output/report_math/equation-039.svg" alt="r_{ab}=(1+r_{mb})^{12}-1. \tag{6}"></p>
-<p><img src="output/report_math/equation-040.svg" alt="r_{ab} = 4.45\% \tag{7}"></p>
-<p><em><strong>For these payment amounts and durations, effective annual returns below <img src="output/report_math/equation-041.svg" alt="4.45\%"> favor the age-70 strategy; returns above it favor the age-67 strategy.</strong></em></p>
+<p>Find the break-even monthly return <img src="output/report_math/equation-033.svg?v=1e25daba88c6" alt="r_{mb}\ne0"> at which the two future values are equal:</p>
+<p><img src="output/report_math/equation-034.svg?v=7b11e6762412" alt="\mathrm{FV}{67} = \\mathrm{FV}{70} \tag{4}"></p>
+<p><img src="output/report_math/equation-035.svg?v=418a4d669249" alt="P_{67}(1+r_{mb})\frac{(1+r_{mb})^{n_{67}}-1}{r_{mb}} = P_{70}(1+r_{mb})\frac{(1+r_{mb})^{n_{70}}-1}{r_{mb}} \tag{5}"></p>
+<p>Solve Equation 5 numerically for a nonzero <img src="output/report_math/equation-036.svg?v=d100b16e4770" alt="r_{mb}">.</p>
+<p>Let <img src="output/report_math/equation-037.svg?v=efa85144d7d9" alt="r_{ab}"> denote the effective annual break-even return corresponding to the monthly solution <img src="output/report_math/equation-038.svg?v=d100b16e4770" alt="r_{mb}">:</p>
+<p><img src="output/report_math/equation-039.svg?v=52d69e5420e7" alt="r_{ab}=(1+r_{mb})^{12}-1. \tag{6}"></p>
+<p><img src="output/report_math/equation-040.svg?v=abb79fa12cc7" alt="r_{ab} = 4.45\% \tag{7}"></p>
+<p><em><strong>For these payment amounts and durations, effective annual returns below <img src="output/report_math/equation-041.svg?v=123111d53ca7" alt="4.45\%"> favor the age-70 strategy; returns above it favor the age-67 strategy.</strong></em></p>
 <h2>Results before taxes</h2>
 <p>The following charts show the future values of each strategy and the delta versus constant invesment returns.  The before-tax break-even return of 4.45% is marked on these charts, within the plotted 3.50%–20.00% range.</p>
 <p><img src="output/future_values.png" alt="Future values by effective annual return"></p>
 <p><img src="output/delta.png" alt="Before-tax delta versus investment rate"></p>
-<p>Delta is <img src="output/report_math/equation-042.svg" alt="\mathrm{FV}{67}-\\mathrm{FV}{70}">. Positive values favor starting at 67; negative values favor starting at 70.</p>
+<p>Delta is <img src="output/report_math/equation-042.svg?v=03beee5993ce" alt="\mathrm{FV}{67}-\\mathrm{FV}{70}">. Positive values favor starting at 67; negative values favor starting at 70.</p>
 <div style="break-after: page;"></div>
 
 <h2>Consider Taxes</h2>
@@ -247,52 +247,52 @@
 </thead>
 <tbody><tr>
 <td>Federal long-term capital gains</td>
-<td align="right"><img src="output/report_math/equation-043.svg" alt="20.00\%"></td>
+<td align="right"><img src="output/report_math/equation-043.svg?v=28ff4b87c803" alt="20.00\%"></td>
 </tr>
 <tr>
 <td>Federal net investment income tax</td>
-<td align="right"><img src="output/report_math/equation-044.svg" alt="3.80\%"></td>
+<td align="right"><img src="output/report_math/equation-044.svg?v=8f22af997f90" alt="3.80\%"></td>
 </tr>
 <tr>
 <td>Maryland state income tax</td>
-<td align="right"><img src="output/report_math/equation-045.svg" alt="6.50\%"></td>
+<td align="right"><img src="output/report_math/equation-045.svg?v=312284b0127f" alt="6.50\%"></td>
 </tr>
 <tr>
 <td>Maryland local income tax, highest county rate</td>
-<td align="right"><img src="output/report_math/equation-046.svg" alt="3.30\%"></td>
+<td align="right"><img src="output/report_math/equation-046.svg?v=de0a65f045d1" alt="3.30\%"></td>
 </tr>
 <tr>
 <td>Maryland additional tax on covered net capital gains</td>
-<td align="right"><img src="output/report_math/equation-047.svg" alt="2.00\%"></td>
+<td align="right"><img src="output/report_math/equation-047.svg?v=2412c9d1d9b7" alt="2.00\%"></td>
 </tr>
 <tr>
 <td><strong>Combined assumption</strong></td>
-<td align="right"><img src="output/report_math/equation-048.svg" alt="\bf35.60\%"></td>
+<td align="right"><img src="output/report_math/equation-048.svg?v=f06451958bbf" alt="\bf35.60\%"></td>
 </tr>
 </tbody></table></div>
-<p>The federal net investment income tax (NIIT) is an additional <img src="output/report_math/equation-049.svg" alt="3.80\%"> tax. For married couples filing jointly, it applies to the smaller of net investment income or the amount by which modified adjusted gross income exceeds <img src="output/report_math/equation-050.svg" alt="\$250,000">. Maryland also imposes an additional <img src="output/report_math/equation-051.svg" alt="2.00\%"> tax on covered net capital gains when federal adjusted gross income exceeds <img src="output/report_math/equation-052.svg" alt="\$350,000">; specified exclusions apply. The assumed local income tax rate is <img src="output/report_math/equation-053.svg" alt="3.30\%">.</p>
+<p>The federal net investment income tax (NIIT) is an additional <img src="output/report_math/equation-049.svg?v=8f22af997f90" alt="3.80\%"> tax. For married couples filing jointly, it applies to the smaller of net investment income or the amount by which modified adjusted gross income exceeds <img src="output/report_math/equation-050.svg?v=b240b0f7f8e1" alt="\$250,000">. Maryland also imposes an additional <img src="output/report_math/equation-051.svg?v=2412c9d1d9b7" alt="2.00\%"> tax on covered net capital gains when federal adjusted gross income exceeds <img src="output/report_math/equation-052.svg?v=5d3be7217717" alt="\$350,000">; specified exclusions apply. The assumed local income tax rate is <img src="output/report_math/equation-053.svg?v=de0a65f045d1" alt="3.30\%">.</p>
 <p>Income tax is deducted from each Social Security payment when it is received, and only the remaining amount is invested. Investments then compound without interim capital-gains tax deductions. At age 90, the portfolio is liquidated and the 35.60% investment-tax assumption applies only to the gain above total invested after-tax contributions.</p>
 <h3>Calculation</h3>
-<p>For either strategy, let <img src="output/report_math/equation-054.svg" alt="P"> be the gross monthly benefit, <img src="output/report_math/equation-055.svg" alt="N"> the payment count, <img src="output/report_math/equation-056.svg" alt="P_{\mathrm{net}}"> the monthly amount invested after income tax, and <img src="output/report_math/equation-057.svg" alt="B"> the total invested principal:</p>
-<p><img src="output/report_math/equation-058.svg" alt="P_{\mathrm{net}}=P(1-0.85\times0.37)=0.6855P \tag{8}"></p>
-<p><img src="output/report_math/equation-059.svg" alt="B=NP_{\mathrm{net}} \tag{9}"></p>
-<p>Let <img src="output/report_math/equation-060.svg" alt="V"> be the portfolio balance at age 90 before capital-gains tax:</p>
-<p><img src="output/report_math/equation-061.svg" alt="V=P_{\mathrm{net}}(1+r_m)\frac{(1+r_m)^N-1}{r_m} \tag{10}"></p>
-<p>Investment growth <img src="output/report_math/equation-062.svg" alt="G"> excludes the invested principal:</p>
-<p><img src="output/report_math/equation-063.svg" alt="G=V-B \tag{11}"></p>
-<p>Let <img src="output/report_math/equation-064.svg" alt="T"> be the one-time capital-gains tax on that growth:</p>
-<p><img src="output/report_math/equation-065.svg" alt="T=0.356G \tag{12}"></p>
-<p>The after tax future value, <img src="output/report_math/equation-066.svg" alt="\mathrm{FV}_{\text{net-tax}}">, is:</p>
-<p><img src="output/report_math/equation-067.svg" alt="\mathrm{FV}_{\text{net-tax}}=V-T \tag{13}"></p>
-<p>Here <img src="output/report_math/equation-068.svg" alt="V"> is the balance before capital-gains tax at age 90, <img src="output/report_math/equation-069.svg" alt="G"> is accumulated investment growth, <img src="output/report_math/equation-070.svg" alt="T"> is the one-time capital-gains tax, and <img src="output/report_math/equation-071.svg" alt="\mathrm{FV}_{\text{net-tax}}"> is the after tax future value.</p>
+<p>For either strategy, let <img src="output/report_math/equation-054.svg?v=075378da2698" alt="P"> be the gross monthly benefit, <img src="output/report_math/equation-055.svg?v=2efa57244919" alt="N"> the payment count, <img src="output/report_math/equation-056.svg?v=844d432c1d62" alt="P_{\mathrm{net}}"> the monthly amount invested after income tax, and <img src="output/report_math/equation-057.svg?v=b36cc1bb6a0f" alt="B"> the total invested principal:</p>
+<p><img src="output/report_math/equation-058.svg?v=c0f3e86d6013" alt="P_{\mathrm{net}}=P(1-0.85\times0.37)=0.6855P \tag{8}"></p>
+<p><img src="output/report_math/equation-059.svg?v=0833f9f1b80e" alt="B=NP_{\mathrm{net}} \tag{9}"></p>
+<p>Let <img src="output/report_math/equation-060.svg?v=222ed982b54e" alt="V"> be the portfolio balance at age 90 before capital-gains tax:</p>
+<p><img src="output/report_math/equation-061.svg?v=bfb5f752a60f" alt="V=P_{\mathrm{net}}(1+r_m)\frac{(1+r_m)^N-1}{r_m} \tag{10}"></p>
+<p>Investment growth <img src="output/report_math/equation-062.svg?v=b412d1a4949c" alt="G"> excludes the invested principal:</p>
+<p><img src="output/report_math/equation-063.svg?v=d3a966436f9d" alt="G=V-B \tag{11}"></p>
+<p>Let <img src="output/report_math/equation-064.svg?v=88d9a5db0739" alt="T"> be the one-time capital-gains tax on that growth:</p>
+<p><img src="output/report_math/equation-065.svg?v=a02353f7f0a1" alt="T=0.356G \tag{12}"></p>
+<p>The after tax future value, <img src="output/report_math/equation-066.svg?v=abdc25775a6b" alt="\mathrm{FV}_{\text{net-tax}}">, is:</p>
+<p><img src="output/report_math/equation-067.svg?v=06a60a8beb2c" alt="\mathrm{FV}_{\text{net-tax}}=V-T \tag{13}"></p>
+<p>Here <img src="output/report_math/equation-068.svg?v=222ed982b54e" alt="V"> is the balance before capital-gains tax at age 90, <img src="output/report_math/equation-069.svg?v=b412d1a4949c" alt="G"> is accumulated investment growth, <img src="output/report_math/equation-070.svg?v=88d9a5db0739" alt="T"> is the one-time capital-gains tax, and <img src="output/report_math/equation-071.svg?v=abdc25775a6b" alt="\mathrm{FV}_{\text{net-tax}}"> is the after tax future value.</p>
 <br>
 
 <h3>After tax results</h3>
-<h4>After tax results given a <img src="output/report_math/equation-072.svg" alt="10\%"> investment return.</h4>
+<h4>After tax results given a <img src="output/report_math/equation-072.svg?v=d5535508170d" alt="10\%"> investment return.</h4>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Report table"><table>
 <thead>
 <tr>
-<th><img src="output/report_math/equation-073.svg" alt="10.00\%"> annual investment return</th>
+<th><img src="output/report_math/equation-073.svg?v=fda5c6a99c00" alt="10.00\%"> annual investment return</th>
 <th align="right">Age 62</th>
 <th align="right">Age 63</th>
 <th align="right">Age 64</th>
@@ -401,7 +401,7 @@
 <td align="right">$1.95M</td>
 </tr>
 <tr>
-<td><strong><img src="output/report_math/equation-074.svg" alt="\Delta"></strong></td>
+<td><strong><img src="output/report_math/equation-074.svg?v=8a5f934da889" alt="\Delta"></strong></td>
 <td align="right">$468K</td>
 <td align="right">$404K</td>
 <td align="right">$330K</td>
@@ -413,11 +413,11 @@
 <td align="right">$0</td>
 </tr>
 </tbody></table></div>
-<h4>After tax results given a <img src="output/report_math/equation-075.svg" alt="12\%"> investment return.</h4>
+<h4>After tax results given a <img src="output/report_math/equation-075.svg?v=c559ee4954be" alt="12\%"> investment return.</h4>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Report table"><table>
 <thead>
 <tr>
-<th><img src="output/report_math/equation-076.svg" alt="12.00\%"> annual investment return</th>
+<th><img src="output/report_math/equation-076.svg?v=f0d5366f6222" alt="12.00\%"> annual investment return</th>
 <th align="right">Age 62</th>
 <th align="right">Age 63</th>
 <th align="right">Age 64</th>
@@ -526,7 +526,7 @@
 <td align="right">$2.39M</td>
 </tr>
 <tr>
-<td><strong><img src="output/report_math/equation-077.svg" alt="\Delta"></strong></td>
+<td><strong><img src="output/report_math/equation-077.svg?v=8a5f934da889" alt="\Delta"></strong></td>
 <td align="right">$970K</td>
 <td align="right">$827K</td>
 <td align="right">$675K</td>
@@ -568,79 +568,79 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><img src="output/report_math/equation-078.svg" alt="r_m"></td>
+<td><img src="output/report_math/equation-078.svg?v=1beace65dbbe" alt="r_m"></td>
 <td>Monthly investment return in decimal form derived from the configured annual return.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-079.svg" alt="r_a"></td>
+<td><img src="output/report_math/equation-079.svg?v=334309037ff8" alt="r_a"></td>
 <td>Annual investment return in decimal form.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-080.svg" alt="r_{mb}"></td>
+<td><img src="output/report_math/equation-080.svg?v=d100b16e4770" alt="r_{mb}"></td>
 <td>Monthly effective break-even investment return in decimal form.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-081.svg" alt="r_{ab}"></td>
+<td><img src="output/report_math/equation-081.svg?v=efa85144d7d9" alt="r_{ab}"></td>
 <td>Annual effective break-even investment return in decimal form.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-082.svg" alt="P_{\mathrm{PIA}}"></td>
+<td><img src="output/report_math/equation-082.svg?v=5153f935c67d" alt="P_{\mathrm{PIA}}"></td>
 <td>Illustrative primary insurance amount, the monthly benefit basis at full retirement age 67.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-083.svg" alt="P_{67}">, <img src="output/report_math/equation-084.svg" alt="P_{70}"></td>
+<td><img src="output/report_math/equation-083.svg?v=d4923d0ed679" alt="P_{67}">, <img src="output/report_math/equation-084.svg?v=a5bcfad609d7" alt="P_{70}"></td>
 <td>Gross monthly Social Security payments when starting at ages 67 and 70.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-085.svg" alt="n_{67}"></td>
+<td><img src="output/report_math/equation-085.svg?v=5f07d434db6e" alt="n_{67}"></td>
 <td>Number of monthly payments from age 67 to age 90.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-086.svg" alt="n_{70}"></td>
+<td><img src="output/report_math/equation-086.svg?v=5ec677e2bf3e" alt="n_{70}"></td>
 <td>Number of monthly payments from age 70 to age 90.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-087.svg" alt="\mathrm{FV}_{67}"></td>
+<td><img src="output/report_math/equation-087.svg?v=2c9ac6e09657" alt="\mathrm{FV}_{67}"></td>
 <td>Before-tax future value at the common endpoint for the age-67  strategy.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-088.svg" alt="\mathrm{FV}_{70}"></td>
+<td><img src="output/report_math/equation-088.svg?v=1d8d86f05573" alt="\mathrm{FV}_{70}"></td>
 <td>Before-tax future value at the common endpoint for the age-70 strategy.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-089.svg" alt="\Delta"></td>
-<td>Difference <img src="output/report_math/equation-090.svg" alt="\mathrm{FV}{67}-\\mathrm{FV}{70}">.</td>
+<td><img src="output/report_math/equation-089.svg?v=8a5f934da889" alt="\Delta"></td>
+<td>Difference <img src="output/report_math/equation-090.svg?v=03beee5993ce" alt="\mathrm{FV}{67}-\\mathrm{FV}{70}">.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-091.svg" alt="P"></td>
+<td><img src="output/report_math/equation-091.svg?v=075378da2698" alt="P"></td>
 <td>Gross monthly benefit for either strategy in the tax calculation.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-092.svg" alt="N"></td>
-<td>Payment count for that strategy: <img src="output/report_math/equation-093.svg" alt="n_{67}"> or <img src="output/report_math/equation-094.svg" alt="n_{70}">.</td>
+<td><img src="output/report_math/equation-092.svg?v=2efa57244919" alt="N"></td>
+<td>Payment count for that strategy: <img src="output/report_math/equation-093.svg?v=5f07d434db6e" alt="n_{67}"> or <img src="output/report_math/equation-094.svg?v=5ec677e2bf3e" alt="n_{70}">.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-095.svg" alt="P_{\mathrm{net}}"></td>
+<td><img src="output/report_math/equation-095.svg?v=844d432c1d62" alt="P_{\mathrm{net}}"></td>
 <td>Monthly benefit remaining after benefit taxes, available to invest.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-096.svg" alt="B"></td>
+<td><img src="output/report_math/equation-096.svg?v=b36cc1bb6a0f" alt="B"></td>
 <td>Total invested after-tax principal.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-097.svg" alt="V"></td>
+<td><img src="output/report_math/equation-097.svg?v=222ed982b54e" alt="V"></td>
 <td>Portfolio balance before capital gains tax at age 90.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-098.svg" alt="G"></td>
+<td><img src="output/report_math/equation-098.svg?v=b412d1a4949c" alt="G"></td>
 <td>Accumulated investment growth, excluding contributions.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-099.svg" alt="T"></td>
+<td><img src="output/report_math/equation-099.svg?v=88d9a5db0739" alt="T"></td>
 <td>One-time capital gains tax paid at age 90.</td>
 </tr>
 <tr>
-<td><img src="output/report_math/equation-100.svg" alt="\mathrm{FV}_{\text{net-tax}}"></td>
+<td><img src="output/report_math/equation-100.svg?v=abdc25775a6b" alt="\mathrm{FV}_{\text{net-tax}}"></td>
 <td>After tax future value.</td>
 </tr>
 </tbody></table></div>
