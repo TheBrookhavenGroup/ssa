@@ -1,0 +1,502 @@
+[
+  {
+    "id": "equation-001",
+    "tex": "\\$4,152",
+    "display": false
+  },
+  {
+    "id": "equation-002",
+    "tex": "\\$4,152",
+    "display": false
+  },
+  {
+    "id": "equation-003",
+    "tex": "\\$117,485",
+    "display": false
+  },
+  {
+    "id": "equation-004",
+    "tex": "P_{\\mathrm{PIA}}",
+    "display": false
+  },
+  {
+    "id": "equation-005",
+    "tex": "P_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-006",
+    "tex": "P_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-007",
+    "tex": "n_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-008",
+    "tex": "n_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-009",
+    "tex": "r_a",
+    "display": false
+  },
+  {
+    "id": "equation-010",
+    "tex": "P_{\\mathrm{PIA}}=4{,}152",
+    "display": false
+  },
+  {
+    "id": "equation-011",
+    "tex": "P_{67}=P_{\\mathrm{PIA}}=4{,}152.00",
+    "display": true
+  },
+  {
+    "id": "equation-012",
+    "tex": "\\qquad P_{70}=1.24P_{\\mathrm{PIA}}=5{,}148.48.",
+    "display": true
+  },
+  {
+    "id": "equation-013",
+    "tex": "r_a",
+    "display": false
+  },
+  {
+    "id": "equation-014",
+    "tex": "r_m",
+    "display": false
+  },
+  {
+    "id": "equation-015",
+    "tex": "10\\%",
+    "display": false
+  },
+  {
+    "id": "equation-016",
+    "tex": "r_a=0.10",
+    "display": false
+  },
+  {
+    "id": "equation-017",
+    "tex": "r_m=(1+0.10)^{1/12}-1\\approx0.007974140429.",
+    "display": true
+  },
+  {
+    "id": "equation-018",
+    "tex": "P_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-019",
+    "tex": "P_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-020",
+    "tex": "n_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-021",
+    "tex": "n_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-022",
+    "tex": "\\mathrm{FV}_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-023",
+    "tex": "\\mathrm{FV}_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-024",
+    "tex": "\\mathrm{FV}_{67} = P_{67}(1+r_m)\\frac{(1+r_m)^{n_{67}}-1}{r_m} \\tag{1}",
+    "display": true
+  },
+  {
+    "id": "equation-025",
+    "tex": "\\mathrm{FV}_{70} = P_{70}(1+r_m)\\frac{(1+r_m)^{n_{70}}-1}{r_m} \\tag{2}",
+    "display": true
+  },
+  {
+    "id": "equation-026",
+    "tex": "\\Delta",
+    "display": false
+  },
+  {
+    "id": "equation-027",
+    "tex": "\\Delta = \\mathrm{FV}_{67} - \\mathrm{FV}_{70} \\tag{3}",
+    "display": true
+  },
+  {
+    "id": "equation-028",
+    "tex": "\\Delta",
+    "display": false
+  },
+  {
+    "id": "equation-029",
+    "tex": "r_a",
+    "display": false
+  },
+  {
+    "id": "equation-030",
+    "tex": "FV_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-031",
+    "tex": "FV_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-032",
+    "tex": "\\Delta",
+    "display": false
+  },
+  {
+    "id": "equation-033",
+    "tex": "r_{mb}\\ne0",
+    "display": false
+  },
+  {
+    "id": "equation-034",
+    "tex": "\\mathrm{FV}_{67} = \\mathrm{FV}_{70} \\tag{4}",
+    "display": true
+  },
+  {
+    "id": "equation-035",
+    "tex": "P_{67}(1+r_{mb})\\frac{(1+r_{mb})^{n_{67}}-1}{r_{mb}} = P_{70}(1+r_{mb})\\frac{(1+r_{mb})^{n_{70}}-1}{r_{mb}} \\tag{5}",
+    "display": true
+  },
+  {
+    "id": "equation-036",
+    "tex": "r_{mb}",
+    "display": false
+  },
+  {
+    "id": "equation-037",
+    "tex": "r_{ab}",
+    "display": false
+  },
+  {
+    "id": "equation-038",
+    "tex": "r_{mb}",
+    "display": false
+  },
+  {
+    "id": "equation-039",
+    "tex": "r_{ab}=(1+r_{mb})^{12}-1. \\tag{6}",
+    "display": true
+  },
+  {
+    "id": "equation-040",
+    "tex": "r_{ab} = 4.45\\% \\tag{7}",
+    "display": true
+  },
+  {
+    "id": "equation-041",
+    "tex": "4.45\\%",
+    "display": false
+  },
+  {
+    "id": "equation-042",
+    "tex": "\\mathrm{FV}_{67}-\\mathrm{FV}_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-043",
+    "tex": "20.00\\%",
+    "display": false
+  },
+  {
+    "id": "equation-044",
+    "tex": "3.80\\%",
+    "display": false
+  },
+  {
+    "id": "equation-045",
+    "tex": "6.50\\%",
+    "display": false
+  },
+  {
+    "id": "equation-046",
+    "tex": "3.30\\%",
+    "display": false
+  },
+  {
+    "id": "equation-047",
+    "tex": "2.00\\%",
+    "display": false
+  },
+  {
+    "id": "equation-048",
+    "tex": "\\bf35.60\\%",
+    "display": false
+  },
+  {
+    "id": "equation-049",
+    "tex": "3.80\\%",
+    "display": false
+  },
+  {
+    "id": "equation-050",
+    "tex": "\\$250,000",
+    "display": false
+  },
+  {
+    "id": "equation-051",
+    "tex": "2.00\\%",
+    "display": false
+  },
+  {
+    "id": "equation-052",
+    "tex": "\\$350,000",
+    "display": false
+  },
+  {
+    "id": "equation-053",
+    "tex": "3.30\\%",
+    "display": false
+  },
+  {
+    "id": "equation-054",
+    "tex": "P",
+    "display": false
+  },
+  {
+    "id": "equation-055",
+    "tex": "N",
+    "display": false
+  },
+  {
+    "id": "equation-056",
+    "tex": "P_{\\mathrm{net}}",
+    "display": false
+  },
+  {
+    "id": "equation-057",
+    "tex": "B",
+    "display": false
+  },
+  {
+    "id": "equation-058",
+    "tex": "P_{\\mathrm{net}}=P(1-0.85\\times0.37)=0.6855P \\tag{8}",
+    "display": true
+  },
+  {
+    "id": "equation-059",
+    "tex": "B=NP_{\\mathrm{net}} \\tag{9}",
+    "display": true
+  },
+  {
+    "id": "equation-060",
+    "tex": "V",
+    "display": false
+  },
+  {
+    "id": "equation-061",
+    "tex": "V=P_{\\mathrm{net}}(1+r_m)\\frac{(1+r_m)^N-1}{r_m} \\tag{10}",
+    "display": true
+  },
+  {
+    "id": "equation-062",
+    "tex": "G",
+    "display": false
+  },
+  {
+    "id": "equation-063",
+    "tex": "G=V-B \\tag{11}",
+    "display": true
+  },
+  {
+    "id": "equation-064",
+    "tex": "T",
+    "display": false
+  },
+  {
+    "id": "equation-065",
+    "tex": "T=0.356G \\tag{12}",
+    "display": true
+  },
+  {
+    "id": "equation-066",
+    "tex": "\\mathrm{FV}_{\\text{net-tax}}",
+    "display": false
+  },
+  {
+    "id": "equation-067",
+    "tex": "\\mathrm{FV}_{\\text{net-tax}}=V-T \\tag{13}",
+    "display": true
+  },
+  {
+    "id": "equation-068",
+    "tex": "V",
+    "display": false
+  },
+  {
+    "id": "equation-069",
+    "tex": "G",
+    "display": false
+  },
+  {
+    "id": "equation-070",
+    "tex": "T",
+    "display": false
+  },
+  {
+    "id": "equation-071",
+    "tex": "\\mathrm{FV}_{\\text{net-tax}}",
+    "display": false
+  },
+  {
+    "id": "equation-072",
+    "tex": "10\\%",
+    "display": false
+  },
+  {
+    "id": "equation-073",
+    "tex": "10.00\\%",
+    "display": false
+  },
+  {
+    "id": "equation-074",
+    "tex": "\\Delta",
+    "display": false
+  },
+  {
+    "id": "equation-075",
+    "tex": "12\\%",
+    "display": false
+  },
+  {
+    "id": "equation-076",
+    "tex": "12.00\\%",
+    "display": false
+  },
+  {
+    "id": "equation-077",
+    "tex": "\\Delta",
+    "display": false
+  },
+  {
+    "id": "equation-078",
+    "tex": "r_m",
+    "display": false
+  },
+  {
+    "id": "equation-079",
+    "tex": "r_a",
+    "display": false
+  },
+  {
+    "id": "equation-080",
+    "tex": "r_{mb}",
+    "display": false
+  },
+  {
+    "id": "equation-081",
+    "tex": "r_{ab}",
+    "display": false
+  },
+  {
+    "id": "equation-082",
+    "tex": "P_{\\mathrm{PIA}}",
+    "display": false
+  },
+  {
+    "id": "equation-083",
+    "tex": "P_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-084",
+    "tex": "P_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-085",
+    "tex": "n_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-086",
+    "tex": "n_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-087",
+    "tex": "\\mathrm{FV}_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-088",
+    "tex": "\\mathrm{FV}_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-089",
+    "tex": "\\Delta",
+    "display": false
+  },
+  {
+    "id": "equation-090",
+    "tex": "\\mathrm{FV}_{67}-\\mathrm{FV}_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-091",
+    "tex": "P",
+    "display": false
+  },
+  {
+    "id": "equation-092",
+    "tex": "N",
+    "display": false
+  },
+  {
+    "id": "equation-093",
+    "tex": "n_{67}",
+    "display": false
+  },
+  {
+    "id": "equation-094",
+    "tex": "n_{70}",
+    "display": false
+  },
+  {
+    "id": "equation-095",
+    "tex": "P_{\\mathrm{net}}",
+    "display": false
+  },
+  {
+    "id": "equation-096",
+    "tex": "B",
+    "display": false
+  },
+  {
+    "id": "equation-097",
+    "tex": "V",
+    "display": false
+  },
+  {
+    "id": "equation-098",
+    "tex": "G",
+    "display": false
+  },
+  {
+    "id": "equation-099",
+    "tex": "T",
+    "display": false
+  },
+  {
+    "id": "equation-100",
+    "tex": "\\mathrm{FV}_{\\text{net-tax}}",
+    "display": false
+  }
+]
