@@ -15,9 +15,9 @@ Social Security monthly benefits can start when eligible participants reach age 
 
 I have two questions: 1. Is it better to start taking Social Secutity payments at age 67 or age 70?; and 2. What investment interest rate makes it beneficial to start payments early?
 
-To answer these questions I simulated investing all monthly Social Security payments until age 90. The future value was calculated with payments started at age 67 compared to waiting until age 70. The analysis derives both monthly payments from an illustrative **primary insurance amount (PIA)** of $\$4,152$, then tabulates both strategies at a 10.00% annual investment return. Charts illustrate future values over a range of annual returns from 3.50% to 20.00%, and identifies the break-even return at which their final balances are equal. The analysis is repeated using federal and Maryland tax assumptions for net tax results.
+To answer these questions I simulated investing all monthly Social Security payments until age 90. The future value was calculated with payments started at age 67 compared to waiting until age 70. The analysis derives both monthly payments from an illustrative **primary insurance amount (PIA)** of ![\\$4,152](output/report_math/equation-001.svg), then tabulates both strategies at a 10.00% annual investment return. Charts illustrate future values over a range of annual returns from 3.50% to 20.00%, and identifies the break-even return at which their final balances are equal. The analysis is repeated using federal and Maryland tax assumptions for net tax results.
 
-One does not have to retire in order to claim benefits.  Monthly payments made before age 67, for particpants born in 1960 or later, are reduced based on earned income.  For a PIA of $\$4,152$ at age 67 an income of $\$117,485$ would result in zero benefit in years earlier than age 67.  After age 67 the full benefit is paid regardless of employment status.  
+One does not have to retire in order to claim benefits.  Monthly payments made before age 67, for particpants born in 1960 or later, are reduced based on earned income.  For a PIA of ![\\$4,152](output/report_math/equation-002.svg) at age 67 an income of ![\\$117,485](output/report_math/equation-003.svg) would result in zero benefit in years earlier than age 67.  After age 67 the full benefit is paid regardless of employment status.  
 
 Symbols used in formulas are defined throughout this document and summarized in the appendix.
 
@@ -80,94 +80,74 @@ This is an investment cash-flow model, not an SSA benefit calculator. It assumes
 #### Example values used in simulations
 | Input | Age-67 strategy | Age-70 strategy |
 | --- | ---: | ---: |
-| PIA input ($P_{\mathrm{PIA}}$) | \$4,152.00 | \$4,152.00 |
-| Derived monthly payment ($P_{67}$, $P_{70}$) | \$4,152.00 | \$5,148.48 |
-| Number of monthly payments ($n_{67}$, $n_{70}$) | 276 | 240 |
-| Annual investment return ($r_a$) | 10.00% | 10.00% |
+| PIA input (![P_{\\mathrm{PIA}}](output/report_math/equation-004.svg)) | \$4,152.00 | \$4,152.00 |
+| Derived monthly payment (![P_{67}](output/report_math/equation-005.svg), ![P_{70}](output/report_math/equation-006.svg)) | \$4,152.00 | \$5,148.48 |
+| Number of monthly payments (![n_{67}](output/report_math/equation-007.svg), ![n_{70}](output/report_math/equation-008.svg)) | 276 | 240 |
+| Annual investment return (![r_a](output/report_math/equation-009.svg)) | 10.00% | 10.00% |
 | Common valuation endpoint | 90th birthday | 90th birthday |
 
 Payments are invested at the **beginning of each month**, and future values are measured at the **end of the final month**. The first payment earns interest for the full investment period; the last earns one month of interest.
 
-The example uses $P_{\mathrm{PIA}}=4{,}152$ dollars per month. SSA publishes **\$4,152** as the maximum monthly benefit for a worker retiring at full retirement age in **2026**. Here it is used as an illustrative PIA.  The PIA depends on historical earnings.
+The example uses ![P_{\\mathrm{PIA}}=4{,}152](output/report_math/equation-010.svg) dollars per month. SSA publishes **\$4,152** as the maximum monthly benefit for a worker retiring at full retirement age in **2026**. Here it is used as an illustrative PIA.  The PIA depends on historical earnings.
 
 The monthly benefit starting at ages 67 and 70 respectively are:
 
-$$
-P_{67}=P_{\mathrm{PIA}}=4{,}152.00
-$$
+![P_{67}=P_{\\mathrm{PIA}}=4{,}152.00](output/report_math/equation-011.svg)
 
-$$
-\qquad P_{70}=1.24P_{\mathrm{PIA}}=5{,}148.48.
-$$
+![\\qquad P_{70}=1.24P_{\\mathrm{PIA}}=5{,}148.48.](output/report_math/equation-012.svg)
 
-Let $r_a$ denote the annual investment return and $r_m$ the equivalent monthly return. For a $10\%$ annual return $r_a=0.10$. The monthly rate, in decimal form, used for compounding is:
+Let ![r_a](output/report_math/equation-013.svg) denote the annual investment return and ![r_m](output/report_math/equation-014.svg) the equivalent monthly return. For a ![10\\%](output/report_math/equation-015.svg) annual return ![r_a=0.10](output/report_math/equation-016.svg). The monthly rate, in decimal form, used for compounding is:
 
-$$
-r_m=(1+0.10)^{1/12}-1\approx0.007974140429.
-$$
+![r_m=(1+0.10)^{1/12}-1\\approx0.007974140429.](output/report_math/equation-017.svg)
 
 
 ### Finding delta
 
 Delta is the difference between the future values starting benefits at age 67 and age 70.
 
-Let $P_{67}$ and $P_{70}$ be the gross monthly payments starting at ages 67 and 70 respectively. Let $n_{67}$ and $n_{70}$ be the respective payment counts. The corresponding before-tax future values at age 90 are $\mathrm{FV}_{67}$ and $\mathrm{FV}_{70}$.
+Let ![P_{67}](output/report_math/equation-018.svg) and ![P_{70}](output/report_math/equation-019.svg) be the gross monthly payments starting at ages 67 and 70 respectively. Let ![n_{67}](output/report_math/equation-020.svg) and ![n_{70}](output/report_math/equation-021.svg) be the respective payment counts. The corresponding before-tax future values at age 90 are ![\\mathrm{FV}_{67}](output/report_math/equation-022.svg) and ![\\mathrm{FV}_{70}](output/report_math/equation-023.svg).
 
-$$
-\mathrm{FV}_{67} = P_{67}(1+r_m)\frac{(1+r_m)^{n_{67}}-1}{r_m} \tag{1}
-$$
+![\\mathrm{FV}_{67} = P_{67}(1+r_m)\\frac{(1+r_m)^{n_{67}}-1}{r_m} \\tag{1}](output/report_math/equation-024.svg)
 
-$$
-\mathrm{FV}_{70} = P_{70}(1+r_m)\frac{(1+r_m)^{n_{70}}-1}{r_m} \tag{2}
-$$
+![\\mathrm{FV}_{70} = P_{70}(1+r_m)\\frac{(1+r_m)^{n_{70}}-1}{r_m} \\tag{2}](output/report_math/equation-025.svg)
 
-The difference $\Delta$ is the age-67 future value minus the age-70 future value:
+The difference ![\\Delta](output/report_math/equation-026.svg) is the age-67 future value minus the age-70 future value:
 
-$$
-\Delta = \mathrm{FV}_{67} - \mathrm{FV}_{70} \tag{3}
-$$
+![\\Delta = \\mathrm{FV}_{67} - \\mathrm{FV}_{70} \\tag{3}](output/report_math/equation-027.svg)
 
-Therefore, $\Delta$ is how much more value is gained by starting payments early.
+Therefore, ![\\Delta](output/report_math/equation-028.svg) is how much more value is gained by starting payments early.
 
 
 #### Results at 10.00% effective annual return
 
 | Measure | Result |
 | --- | ---: |
-| Annual investment return ($r_a$) | 10% |
-| Payments starting at 67 ($FV_{67}$) | \$4,174,697|
-| Payments starting at 70 $FV_{70}$) | \$3,727,431 |
-| FV67 - FV70 ($\Delta$)| \$447,266 |
+| Annual investment return (![r_a](output/report_math/equation-029.svg)) | 10% |
+| Payments starting at 67 (![FV_{67}](output/report_math/equation-030.svg)) | \$4,174,697|
+| Payments starting at 70 ![FV_{70}](output/report_math/equation-031.svg)) | \$3,727,431 |
+| FV67 - FV70 (![\\Delta](output/report_math/equation-032.svg))| \$447,266 |
 
 The positive delta means that starting at age 67 yields a larger final investment balance under these inputs. The earlier payments have more time to compound.
 
 ### Finding the nonzero break-even return
 
-Find the break-even monthly return $r_{mb}\ne0$ at which the two future values are equal:
+Find the break-even monthly return ![r_{mb}\\ne0](output/report_math/equation-033.svg) at which the two future values are equal:
 
-$$
-\mathrm{FV}_{67} = \mathrm{FV}_{70} \tag{4}
-$$
+![\\mathrm{FV}_{67} = \\mathrm{FV}_{70} \\tag{4}](output/report_math/equation-034.svg)
 
-$$
-P_{67}(1+r_{mb})\frac{(1+r_{mb})^{n_{67}}-1}{r_{mb}} = P_{70}(1+r_{mb})\frac{(1+r_{mb})^{n_{70}}-1}{r_{mb}} \tag{5}
-$$
+![P_{67}(1+r_{mb})\\frac{(1+r_{mb})^{n_{67}}-1}{r_{mb}} = P_{70}(1+r_{mb})\\frac{(1+r_{mb})^{n_{70}}-1}{r_{mb}} \\tag{5}](output/report_math/equation-035.svg)
 
-Solve Equation 5 numerically for a nonzero $r_{mb}$.
+Solve Equation 5 numerically for a nonzero ![r_{mb}](output/report_math/equation-036.svg).
 
-Let $r_{ab}$ denote the effective annual break-even return corresponding to the monthly solution $r_{mb}$:
+Let ![r_{ab}](output/report_math/equation-037.svg) denote the effective annual break-even return corresponding to the monthly solution ![r_{mb}](output/report_math/equation-038.svg):
 
-$$
-r_{ab}=(1+r_{mb})^{12}-1. \tag{6}
-$$
+![r_{ab}=(1+r_{mb})^{12}-1. \\tag{6}](output/report_math/equation-039.svg)
 
-$$
-r_{ab} = 4.45\% \tag{7}
-$$
+![r_{ab} = 4.45\\% \\tag{7}](output/report_math/equation-040.svg)
 
 
 
-***For these payment amounts and durations, effective annual returns below $4.45\%$ favor the age-70 strategy; returns above it favor the age-67 strategy.***
+***For these payment amounts and durations, effective annual returns below ![4.45\\%](output/report_math/equation-041.svg) favor the age-70 strategy; returns above it favor the age-67 strategy.***
 
 
 ## Results before taxes
@@ -178,7 +158,7 @@ The following charts show the future values of each strategy and the delta versu
 
 ![Before-tax delta versus investment rate](output/delta.png)
 
-Delta is $\mathrm{FV}_{67}-\mathrm{FV}_{70}$. Positive values favor starting at 67; negative values favor starting at 70.
+Delta is ![\\mathrm{FV}_{67}-\\mathrm{FV}_{70}](output/report_math/equation-042.svg). Positive values favor starting at 67; negative values favor starting at 70.
 
 <div style="break-after: page;"></div>
 
@@ -201,63 +181,51 @@ For investment gains, use this combined top marginal rate:
 
 | Tax Rates | Rate on covered gains |
 | --- | ---: |
-| Federal long-term capital gains | $20.00\%$ |
-| Federal net investment income tax | $3.80\%$ |
-| Maryland state income tax | $6.50\%$ |
-| Maryland local income tax, highest county rate | $3.30\%$ |
-| Maryland additional tax on covered net capital gains | $2.00\%$ |
-| **Combined assumption** | $\bf35.60\%$ |
+| Federal long-term capital gains | ![20.00\\%](output/report_math/equation-043.svg) |
+| Federal net investment income tax | ![3.80\\%](output/report_math/equation-044.svg) |
+| Maryland state income tax | ![6.50\\%](output/report_math/equation-045.svg) |
+| Maryland local income tax, highest county rate | ![3.30\\%](output/report_math/equation-046.svg) |
+| Maryland additional tax on covered net capital gains | ![2.00\\%](output/report_math/equation-047.svg) |
+| **Combined assumption** | ![\\bf35.60\\%](output/report_math/equation-048.svg) |
 
-The federal net investment income tax (NIIT) is an additional $3.80\%$ tax. For married couples filing jointly, it applies to the smaller of net investment income or the amount by which modified adjusted gross income exceeds $\$250,000$. Maryland also imposes an additional $2.00\%$ tax on covered net capital gains when federal adjusted gross income exceeds $\$350,000$; specified exclusions apply. The assumed local income tax rate is $3.30\%$.
+The federal net investment income tax (NIIT) is an additional ![3.80\\%](output/report_math/equation-049.svg) tax. For married couples filing jointly, it applies to the smaller of net investment income or the amount by which modified adjusted gross income exceeds ![\\$250,000](output/report_math/equation-050.svg). Maryland also imposes an additional ![2.00\\%](output/report_math/equation-051.svg) tax on covered net capital gains when federal adjusted gross income exceeds ![\\$350,000](output/report_math/equation-052.svg); specified exclusions apply. The assumed local income tax rate is ![3.30\\%](output/report_math/equation-053.svg).
 
 Income tax is deducted from each Social Security payment when it is received, and only the remaining amount is invested. Investments then compound without interim capital-gains tax deductions. At age 90, the portfolio is liquidated and the 35.60% investment-tax assumption applies only to the gain above total invested after-tax contributions.
 
 ### Calculation
 
-For either strategy, let $P$ be the gross monthly benefit, $N$ the payment count, $P_{\mathrm{net}}$ the monthly amount invested after income tax, and $B$ the total invested principal:
+For either strategy, let ![P](output/report_math/equation-054.svg) be the gross monthly benefit, ![N](output/report_math/equation-055.svg) the payment count, ![P_{\\mathrm{net}}](output/report_math/equation-056.svg) the monthly amount invested after income tax, and ![B](output/report_math/equation-057.svg) the total invested principal:
 
-$$
-P_{\mathrm{net}}=P(1-0.85\times0.37)=0.6855P \tag{8}
-$$
+![P_{\\mathrm{net}}=P(1-0.85\\times0.37)=0.6855P \\tag{8}](output/report_math/equation-058.svg)
 
-$$
-B=NP_{\mathrm{net}} \tag{9}
-$$
+![B=NP_{\\mathrm{net}} \\tag{9}](output/report_math/equation-059.svg)
 
-Let $V$ be the portfolio balance at age 90 before capital-gains tax:
+Let ![V](output/report_math/equation-060.svg) be the portfolio balance at age 90 before capital-gains tax:
 
-$$
-V=P_{\mathrm{net}}(1+r_m)\frac{(1+r_m)^N-1}{r_m} \tag{10}
-$$
+![V=P_{\\mathrm{net}}(1+r_m)\\frac{(1+r_m)^N-1}{r_m} \\tag{10}](output/report_math/equation-061.svg)
 
-Investment growth $G$ excludes the invested principal:
+Investment growth ![G](output/report_math/equation-062.svg) excludes the invested principal:
 
-$$
-G=V-B \tag{11}
-$$
+![G=V-B \\tag{11}](output/report_math/equation-063.svg)
 
-Let $T$ be the one-time capital-gains tax on that growth:
+Let ![T](output/report_math/equation-064.svg) be the one-time capital-gains tax on that growth:
 
-$$
-T=0.356G \tag{12}
-$$
+![T=0.356G \\tag{12}](output/report_math/equation-065.svg)
 
-The after tax future value, $\mathrm{FV}_{\text{net-tax}}$, is:
+The after tax future value, ![\\mathrm{FV}_{\\text{net-tax}}](output/report_math/equation-066.svg), is:
 
-$$
-\mathrm{FV}_{\text{net-tax}}=V-T \tag{13}
-$$
+![\\mathrm{FV}_{\\text{net-tax}}=V-T \\tag{13}](output/report_math/equation-067.svg)
 
-Here $V$ is the balance before capital-gains tax at age 90, $G$ is accumulated investment growth, $T$ is the one-time capital-gains tax, and $\mathrm{FV}_{\text{net-tax}}$ is the after tax future value.
+Here ![V](output/report_math/equation-068.svg) is the balance before capital-gains tax at age 90, ![G](output/report_math/equation-069.svg) is accumulated investment growth, ![T](output/report_math/equation-070.svg) is the one-time capital-gains tax, and ![\\mathrm{FV}_{\\text{net-tax}}](output/report_math/equation-071.svg) is the after tax future value.
 
 <br>
 
 ### After tax results
 
 
-#### After tax results given a $10\%$ investment return.
+#### After tax results given a ![10\\%](output/report_math/equation-072.svg) investment return.
 
-| $10.00\%$ annual investment return | Age 62 | Age 63 | Age 64 | Age 65 | Age 66 | Age 67 | Age 68 | Age 69 | Age 70 |
+| ![10.00\\%](output/report_math/equation-073.svg) annual investment return | Age 62 | Age 63 | Age 64 | Age 65 | Age 66 | Age 67 | Age 68 | Age 69 | Age 70 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Gross monthly benefit | \$2,906 | \$3,114 | \$3,322 | \$3,598 | \$3,875 | \$4,152 | \$4,484 | \$4,816 | \$5,148 |
 | Monthly amount invested after benefit tax | \$1,992 | \$2,135 | \$2,277 | \$2,467 | \$2,656 | \$2,846 | \$3,074 | \$3,302 | \$3,529 |
@@ -267,13 +235,13 @@ Here $V$ is the balance before capital-gains tax at age 90, $G$ is accumulated i
 | Capital-gains tax paid at age 90 | \$965K | \$917K | \$866K | \$828K | \$786K | \$739K | \$699K | \$655K | \$608K |
 | **Break-even return** | 6.15% | 6.11% | 6.20% | 5.85% | 5.62% | 5.59% | 4.96% | 4.31% | All returns |
 | **Future value** | \$2.42M | \$2.35M | \$2.28M | \$2.24M | \$2.19M | \$2.12M | \$2.08M | \$2.02M | \$1.95M |
-| **$\Delta$** | \$468K | \$404K | \$330K | \$291K | \$239K | \$176K | \$129K | \$69,300 | \$0 |
+| **![\\Delta](output/report_math/equation-074.svg)** | \$468K | \$404K | \$330K | \$291K | \$239K | \$176K | \$129K | \$69,300 | \$0 |
 
 
 
-#### After tax results given a $12\%$ investment return.
+#### After tax results given a ![12\\%](output/report_math/equation-075.svg) investment return.
 
-| $12.00\%$ annual investment return | Age 62 | Age 63 | Age 64 | Age 65 | Age 66 | Age 67 | Age 68 | Age 69 | Age 70 |
+| ![12.00\\%](output/report_math/equation-076.svg) annual investment return | Age 62 | Age 63 | Age 64 | Age 65 | Age 66 | Age 67 | Age 68 | Age 69 | Age 70 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Gross monthly benefit | \$2,906 | \$3,114 | \$3,322 | \$3,598 | \$3,875 | \$4,152 | \$4,484 | \$4,816 | \$5,148 |
 | Monthly amount invested after benefit tax | \$1,992 | \$2,135 | \$2,277 | \$2,467 | \$2,656 | \$2,846 | \$3,074 | \$3,302 | \$3,529 |
@@ -283,7 +251,7 @@ Here $V$ is the balance before capital-gains tax at age 90, $G$ is accumulated i
 | Capital-gains tax paid at age 90 | \$1.49M | \$1.40M | \$1.30M | \$1.23M | \$1.15M | \$1.07M | \$1.00M | \$930K | \$854K |
 | **Break-even return** | 6.15% | 6.11% | 6.20% | 5.85% | 5.62% | 5.59% | 4.96% | 4.31% | All returns |
 | **Future value** | \$3.36M | \$3.22M | \$3.07M | \$2.97M | \$2.85M | \$2.73M | \$2.63M | \$2.51M | \$2.39M |
-| **$\Delta$** | \$970K | \$827K | \$675K | \$575K | \$461K | \$335K | \$234K | \$122K | \$0 |
+| **![\\Delta](output/report_math/equation-077.svg)** | \$970K | \$827K | \$675K | \$575K | \$461K | \$335K | \$234K | \$122K | \$0 |
 
 
 
@@ -322,24 +290,24 @@ Under this model’s assumptions, if you do not need the Social Security payment
 
 | Symbol | Definition |
 | --- | --- |
-| $r_m$ | Monthly investment return in decimal form derived from the configured annual return. |
-| $r_a$ | Annual investment return in decimal form. |
-| $r_{mb}$ | Monthly effective break-even investment return in decimal form. |
-| $r_{ab}$ | Annual effective break-even investment return in decimal form. |
-| $P_{\mathrm{PIA}}$ | Illustrative primary insurance amount, the monthly benefit basis at full retirement age 67. |
-| $P_{67}$, $P_{70}$ | Gross monthly Social Security payments when starting at ages 67 and 70. |
-| $n_{67}$ | Number of monthly payments from age 67 to age 90. |
-| $n_{70}$ | Number of monthly payments from age 70 to age 90. |
-| $\mathrm{FV}_{67}$ | Before-tax future value at the common endpoint for the age-67  strategy. |
-| $\mathrm{FV}_{70}$ | Before-tax future value at the common endpoint for the age-70 strategy. |
-| $\Delta$ | Difference $\mathrm{FV}_{67}-\mathrm{FV}_{70}$. |
-| $P$ | Gross monthly benefit for either strategy in the tax calculation. |
-| $N$ | Payment count for that strategy: $n_{67}$ or $n_{70}$. |
-| $P_{\mathrm{net}}$ | Monthly benefit remaining after benefit taxes, available to invest. |
-| $B$ | Total invested after-tax principal. |
-| $V$ | Portfolio balance before capital gains tax at age 90. |
-| $G$ | Accumulated investment growth, excluding contributions. |
-| $T$ | One-time capital gains tax paid at age 90. |
-| $\mathrm{FV}_{\text{net-tax}}$ | After tax future value. |
+| ![r_m](output/report_math/equation-078.svg) | Monthly investment return in decimal form derived from the configured annual return. |
+| ![r_a](output/report_math/equation-079.svg) | Annual investment return in decimal form. |
+| ![r_{mb}](output/report_math/equation-080.svg) | Monthly effective break-even investment return in decimal form. |
+| ![r_{ab}](output/report_math/equation-081.svg) | Annual effective break-even investment return in decimal form. |
+| ![P_{\\mathrm{PIA}}](output/report_math/equation-082.svg) | Illustrative primary insurance amount, the monthly benefit basis at full retirement age 67. |
+| ![P_{67}](output/report_math/equation-083.svg), ![P_{70}](output/report_math/equation-084.svg) | Gross monthly Social Security payments when starting at ages 67 and 70. |
+| ![n_{67}](output/report_math/equation-085.svg) | Number of monthly payments from age 67 to age 90. |
+| ![n_{70}](output/report_math/equation-086.svg) | Number of monthly payments from age 70 to age 90. |
+| ![\\mathrm{FV}_{67}](output/report_math/equation-087.svg) | Before-tax future value at the common endpoint for the age-67  strategy. |
+| ![\\mathrm{FV}_{70}](output/report_math/equation-088.svg) | Before-tax future value at the common endpoint for the age-70 strategy. |
+| ![\\Delta](output/report_math/equation-089.svg) | Difference ![\\mathrm{FV}_{67}-\\mathrm{FV}_{70}](output/report_math/equation-090.svg). |
+| ![P](output/report_math/equation-091.svg) | Gross monthly benefit for either strategy in the tax calculation. |
+| ![N](output/report_math/equation-092.svg) | Payment count for that strategy: ![n_{67}](output/report_math/equation-093.svg) or ![n_{70}](output/report_math/equation-094.svg). |
+| ![P_{\\mathrm{net}}](output/report_math/equation-095.svg) | Monthly benefit remaining after benefit taxes, available to invest. |
+| ![B](output/report_math/equation-096.svg) | Total invested after-tax principal. |
+| ![V](output/report_math/equation-097.svg) | Portfolio balance before capital gains tax at age 90. |
+| ![G](output/report_math/equation-098.svg) | Accumulated investment growth, excluding contributions. |
+| ![T](output/report_math/equation-099.svg) | One-time capital gains tax paid at age 90. |
+| ![\\mathrm{FV}_{\\text{net-tax}}](output/report_math/equation-100.svg) | After tax future value. |
 
 Copyright © 2026 The Brookhaven Group, LLC.

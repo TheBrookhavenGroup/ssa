@@ -163,3 +163,30 @@ LICENSE
 Licensed under the MIT License. See LICENSE for the full terms.
 
 Copyright © 2026 The Brookhaven Group, LLC.
+
+Report equation rendering
+-------------------------
+The Markdown report uses checked-in SVG images for all math, so GitHub visitors
+can read equations without relying on browser math rendering. LaTeX sources are
+in output/report_math/source.json; equation numbers remain part of the artwork.
+To change an equation, edit its source.json entry and regenerate the images.
+The matching equation-NNN.svg filename in the report identifies the entry.
+
+The optional artwork renderer requires Node.js and mathjax-full@3.2.2. Install
+that tool outside this repository, then run from the repository root:
+
+    NODE_PATH=/path/to/node_modules node scripts/render_report_math.cjs
+
+No Node.js dependency is needed to read the report or run the calculator.
+
+Standalone report website
+-------------------------
+report.html presents the report on GitHub Pages without GitHub's repository
+sidebar. The home page and calculator link to it. After editing report Markdown,
+regenerate the HTML with marked@15.0.12 installed outside the repository:
+
+    NODE_PATH=/path/to/node_modules node scripts/render_report.cjs
+
+Commit report.html along with its source and artwork. The generated page needs
+no JavaScript or external rendering service. Its published address is:
+https://thebrookhavengroup.github.io/ssa/report.html

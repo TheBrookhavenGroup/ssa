@@ -7,7 +7,7 @@ Sponsored by [The Brookhaven Group, LLC](https://thebrookhavengroup.com/).
 Compare the future value of investing monthly Social Security benefits starting
 at age 67 versus age 70, with an optional after-tax comparison.
 
-- **[Read the report](20261021SocialSecurity.md)** — equations, assumptions, results, and charts.
+- **[Read the report](https://thebrookhavengroup.github.io/ssa/report.html)** — equations, assumptions, results, and charts.
 - **[Open the interactive calculator](https://thebrookhavengroup.github.io/ssa/web/index.html)** — enter your own PIA, start and end ages, annual return, and tax assumptions.
 
 ## Use the calculator
@@ -74,7 +74,7 @@ It does not rewrite the report. Further details are in [`README.txt`](README.txt
 ## Publishing
 
 GitHub Pages serves the static files from the root of the `main` branch.
-The calculator is at `web/index.html`; no server application or build step is
+The report is at `report.html` and the calculator is at `web/index.html`; no server application or build step is
 needed. Updates pushed to `main` are published automatically by GitHub Pages.
 
 ## Disclaimer

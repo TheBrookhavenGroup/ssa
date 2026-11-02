@@ -1,0 +1,14 @@
+/* Styles specific to the standalone report. */
+nav{display:flex;flex-wrap:wrap;gap:12px 24px;margin:24px 0}
+article{background:white;border:1px solid #d4dfe6;border-radius:12px;padding:clamp(16px,4vw,44px);overflow-wrap:anywhere}
+article h1{font-size:clamp(1.8rem,4vw,2.6rem)}
+article h2{margin-top:36px}
+article h3,article h4{margin-top:24px}
+article img{max-width:100%;height:auto}
+article img[src*="report_math/"]{vertical-align:middle}
+article p:has(> img:only-child){overflow-x:auto;padding:8px 0}
+article .table-wrap{margin:20px 0}
+article table img{max-width:none}
+article th,article td{padding:10px 14px}
+article hr{border:0;border-top:1px solid #d4dfe6;margin:28px 0}
+@media print{nav,.sponsor-banner,footer{display:none}main{padding:0;max-width:none}article{border:0;padding:0}.table-wrap{overflow:visible}article table{white-space:normal;font-size:8pt}article th,article td{padding:4px}}
