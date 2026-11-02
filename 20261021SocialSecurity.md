@@ -94,7 +94,7 @@ The monthly benefit starting at ages 67 and 70 respectively are:
 
 ![P_{67}=P_{\\mathrm{PIA}}=4{,}152.00](output/report_math/equation-011.svg)
 
-![\\qquad P_{70}=1.24P_{\\mathrm{PIA}}=5{,}148.48.](output/report_math/equation-012.svg)
+![P_{70}=1.24P_{\\mathrm{PIA}}=5{,}148.48.](output/report_math/equation-012.svg)
 
 Let ![r_a](output/report_math/equation-013.svg) denote the annual investment return and ![r_m](output/report_math/equation-014.svg) the equivalent monthly return. For a ![10\\%](output/report_math/equation-015.svg) annual return ![r_a=0.10](output/report_math/equation-016.svg). The monthly rate, in decimal form, used for compounding is:
 
