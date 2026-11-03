@@ -95,7 +95,7 @@ Licensed under the [MIT License](LICENSE).
 
 Copyright © 2026 The Brookhaven Group, LLC.
 
-To rebuild the 1200 × 630 social preview, install `sharp` and `opentype.js`
+To rebuild the 1200 × 630 social preview, install `sharp` and `opentype.js@1.3.4`
 outside the repository and run `scripts/render_social_preview.cjs` with
 `NODE_PATH` pointing to those dependencies and a path to Lato Regular TTF
 as its argument. The script uses `web/brookhaven-logo.png` and does not change
