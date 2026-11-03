@@ -14,9 +14,9 @@ async function main() {
     return artwork.toSVG();
   };
   const logo = fs.readFileSync(path.join(root, 'web/brookhaven-logo.png')).toString('base64');
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627">
 <title>The Brookhaven Group — Social Security Investment</title>
-<rect width="1200" height="630" fill="#f3f6f8"/>
+<rect width="1200" height="627" fill="#f3f6f8"/>
 <rect x="40" y="36" width="1120" height="240" rx="4" fill="white" stroke="#dedede"/>
 <path d="M44 38H1156" stroke="#e8522b" stroke-width="6"/>
 <image href="data:image/png;base64,${logo}" x="70" y="60" width="230" height="155"/>
