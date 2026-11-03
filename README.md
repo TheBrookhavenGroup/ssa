@@ -2,8 +2,6 @@
 
 Should I wait until age 70 to start taking Social Security payments?
 
-Sponsored by [The Brookhaven Group, LLC](https://thebrookhavengroup.com/).
-
 Compare the future value of investing monthly Social Security benefits starting
 at age 67 versus age 70, with an optional after-tax comparison.
 
@@ -78,7 +76,7 @@ The report is at `report.html` and the calculator is at `web/index.html`; no ser
 needed. Updates pushed to `main` are published automatically by GitHub Pages.
 
 The landing page includes Open Graph metadata for LinkedIn link previews and
-uses `output/future_values.png` as its preview image. Keep the image dimensions
+uses the branded `web/social-preview.png` as its preview image. Keep the image dimensions
 in `index.html` consistent if the chart size changes. After publishing preview
 changes, inspect `https://thebrookhavengroup.github.io/ssa/` in
 [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) to refresh
@@ -96,3 +94,9 @@ own circumstances.
 Licensed under the [MIT License](LICENSE).
 
 Copyright © 2026 The Brookhaven Group, LLC.
+
+To rebuild the 1200 × 630 social preview, install `sharp` and `opentype.js`
+outside the repository and run `scripts/render_social_preview.cjs` with
+`NODE_PATH` pointing to those dependencies and a path to Lato Regular TTF
+as its argument. The script uses `web/brookhaven-logo.png` and does not change
+the report charts.
