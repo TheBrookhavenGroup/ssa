@@ -77,6 +77,13 @@ GitHub Pages serves the static files from the root of the `main` branch.
 The report is at `report.html` and the calculator is at `web/index.html`; no server application or build step is
 needed. Updates pushed to `main` are published automatically by GitHub Pages.
 
+The landing page includes Open Graph metadata for LinkedIn link previews and
+uses `output/future_values.png` as its preview image. Keep the image dimensions
+in `index.html` consistent if the chart size changes. After publishing preview
+changes, inspect `https://thebrookhavengroup.github.io/ssa/` in
+[LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) to refresh
+LinkedIn's cached preview.
+
 ## Disclaimer
 
 Inputs are illustrative and assumptions may not apply to an individual. The
